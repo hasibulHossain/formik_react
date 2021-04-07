@@ -12,7 +12,6 @@ const MyField = (props) => {
 
     React.useEffect(() => {
         console.log(name, email)
-        // set the value of textC, based on textA and textB
         if (
             name.trim() !== '' &&
             email.trim() !== '' &&
@@ -24,16 +23,8 @@ const MyField = (props) => {
     }, [email, name, touched.name, touched.email, setFieldValue, props.name]);
 
 
-    if (
-        name.trim() !== '' &&
-        email.trim() !== '' &&
-        touched.name &&
-        touched.email
-    ) {
-        return <input { ...props } { ...field } />
-    } else {
-        return <input { ...props } />
-    }
+
+    return <input { ...props } { ...field } />
 
 };
 

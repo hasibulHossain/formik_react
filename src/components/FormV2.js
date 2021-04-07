@@ -10,6 +10,7 @@ function FormV2() {
   const initialValues = {
     name: "",
     email: "",
+    nameEmail: "",
     comments: "",
     address: "",
     social: {
@@ -59,14 +60,14 @@ function FormV2() {
                 <ErrorMessage name="name" component={ ValidationError } />
               </div>
               <div className="input-box">
-                <label htmlFor="email">emailss</label>
+                <label htmlFor="email">email</label>
                 <Field type="email" id="email" name="email" />
                 <ErrorMessage name="email" component={ ValidationError } />
               </div>
               <div className="input-box">
-                <label htmlFor="name&email">Name + Email</label>
-                <MyField type="text" id="name&email" name="name&email" />
-                <ErrorMessage name="name&email" component={ ValidationError } />
+                <label htmlFor="nameEmail">Name + Email</label>
+                <MyField type="text" id="nameEmail" name="nameEmail" />
+                <ErrorMessage name="nameEmail" component={ ValidationError } />
               </div>
               <div className="input-box">
                 <label htmlFor="password">password</label>
